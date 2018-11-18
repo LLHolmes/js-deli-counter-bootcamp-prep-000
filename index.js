@@ -11,3 +11,16 @@ function nowServing(line) {
     return (`Currently serving ${line.shift()}.`)
   }
 }
+
+function currentLine(line) {
+  var lineCurrently = []
+  if (line.length === 0) {
+    return ("The line is currently empty.")
+  }
+  else {
+    for (var i = 0; i < line.length; i++) {
+      lineCurrently.push(`${i+1}. ${line[i]}`)
+    }
+  return (`The line is currently: ${lineCurrently}`)
+  }
+}
