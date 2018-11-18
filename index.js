@@ -19,7 +19,7 @@ function currentLine(line) {
   }
   else {
     for (var i = 0; i < line.length; i++) {
-      lineCurrently.push(`${i+1}. ${line[i]}`)
+      lineCurrently.push(` ${i+1}. ${line[i]}`)
     }
   return (`The line is currently: ${lineCurrently}`)
   }
